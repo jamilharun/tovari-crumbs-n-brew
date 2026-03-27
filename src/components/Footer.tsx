@@ -159,9 +159,14 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-dmsans text-[#F0E6D2]/30 text-xs text-center sm:text-left">
-            &copy; 2026 Calea Pastries &amp; Coffee. All rights reserved.
-          </p>
+          <div className="flex flex-col gap-1.5 text-center sm:text-left">
+            <p className="font-dmsans text-[#F0E6D2]/30 text-xs">
+              &copy; 2026 Unofficial Fan Site. Not affiliated with Calea Pastries &amp; Coffee.
+            </p>
+            <p className="font-dmsans text-[#F0E6D2]/20 text-xs">
+              Made with love by a fan &middot; All trademarks belong to their respective owners.
+            </p>
+          </div>
           <p className="font-dmsans text-[#F0E6D2]/20 text-xs">
             Bacolod City, Negros Occidental, Philippines
           </p>

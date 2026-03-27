@@ -40,14 +40,22 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled || menuOpen
-            ? 'bg-[#F0E6D2] shadow-sm'
-            : 'bg-transparent'
-        }`}
-        aria-label="Main navigation"
-      >
+      <div className="fixed top-0 left-0 right-0 z-50">
+        {/* Unofficial fan site announcement bar */}
+        <div className="bg-[#2B1A0F] py-1.5 px-5">
+          <p className="font-dmsans text-xs text-center text-[#F0E6D2]/60">
+            Unofficial fan site &middot; Not affiliated with or endorsed by Calea Pastries &amp; Coffee
+          </p>
+        </div>
+
+        <nav
+          className={`transition-all duration-500 ${
+            scrolled || menuOpen
+              ? 'bg-[#F0E6D2] shadow-sm'
+              : 'bg-transparent'
+          }`}
+          aria-label="Main navigation"
+        >
         <div className="max-w-6xl mx-auto px-5 md:px-8 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a
@@ -129,7 +137,8 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-      </nav>
+        </nav>
+      </div>
     </>
   );
 }
