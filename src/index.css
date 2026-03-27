@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F0E6D2;
+  --color-ivory-dark: #E4D5BB;
+  --color-rose-gold: #C49A84;
+  --color-rose-gold-dark: #A87D68;
+  --color-espresso: #2B1A0F;
+  --color-espresso-light: #4A2E1A;
+  --color-sage: #8A9A85;
+  --color-sage-light: #B0BDA8;
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-dmsans: 'DM Sans', system-ui, sans-serif;
+  --font-italiana: 'Italiana', Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: #F0E6D2;
+  color: #2B1A0F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+/* Hide scrollbar for glass case horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Glass case card reveal */
+.glass-card-overlay {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: backdrop-filter 0.4s ease, opacity 0.4s ease;
+}
+
+.glass-card:hover .glass-card-overlay,
+.glass-card:focus-within .glass-card-overlay,
+.glass-card.revealed .glass-card-overlay {
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+/* Gallery lightbox */
+.lightbox-open {
+  overflow: hidden;
+}
+
+/* Masonry grid */
+.masonry-grid {
+  columns: 2;
+  column-gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    columns: 3;
+    column-gap: 1rem;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-item {
+    margin-bottom: 1rem;
+  }
+}

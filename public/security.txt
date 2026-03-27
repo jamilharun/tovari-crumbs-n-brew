@@ -1,0 +1,4 @@
+Contact: mailto:hello@caleapastries.com
+Preferred-Languages: en, fil
+Canonical: https://caleapastries.com/.well-known/security.txt
+Policy: This is a static business website. If you discover a security issue, please contact us directly.
