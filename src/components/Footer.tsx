@@ -166,6 +166,12 @@ export default function Footer() {
             <p className="font-dmsans text-[#F0E6D2]/20 text-xs">
               Made with love by a fan &middot; All trademarks belong to their respective owners.
             </p>
+            <a
+              href="mailto:jamilharunl45@gmail.com"
+              className="font-dmsans text-ivory/30 text-xs hover:text-rose-gold transition-colors"
+            >
+              jamilharunl45@gmail.com
+            </a>
           </div>
           <p className="font-dmsans text-[#F0E6D2]/20 text-xs">
             Bacolod City, Negros Occidental, Philippines
