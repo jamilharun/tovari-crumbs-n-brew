@@ -62,7 +62,7 @@ function TripAdvisorBadge() {
           TripAdvisor
         </p>
         <p className="font-dmsans text-[#34E0A1] text-xs leading-none">
-          #1 Coffee &amp; Tea — Bacolod City
+          Cozy café &amp; bakery
         </p>
       </div>
     </div>
@@ -90,18 +90,18 @@ export default function Footer() {
               href="#"
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               className="font-playfair text-[#F0E6D2] text-3xl font-bold"
-              aria-label="Calea — back to top"
+              aria-label="Tovari Crumbs & Brew — back to top"
             >
-              Calea
+              Tovari
             </a>
             <p className="font-dmsans text-[#F0E6D2]/40 text-sm font-light leading-relaxed">
-              See you at the glass case.
+              Simple moments, made memorable.
             </p>
             <p className="font-italiana text-[#C49A84] text-base leading-relaxed">
-              Because Life is Sweeter in Bacolod
+              Freshly baked. Carefully brewed.
             </p>
             <p className="font-dmsans text-[#F0E6D2]/40 text-sm leading-relaxed">
-              Handcrafted pastries and specialty coffee in the heart of Bacolod City since 2009.
+              Handcrafted pastries and specialty coffee, made to turn ordinary moments into something comforting and worth savoring.
             </p>
           </div>
 
@@ -134,20 +134,16 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.facebook.com/pages/Calea-Pastries-Cake-Bacolod-City/126985990721233"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="w-10 h-10 flex items-center justify-center border border-[#F0E6D2]/20 text-[#F0E6D2]/60 hover:text-[#C49A84] hover:border-[#C49A84]/50 transition-colors rounded-sm"
-                aria-label="Calea on Facebook (opens in new tab)"
+                aria-label="Tovari Crumbs & Brew on Facebook"
               >
                 <FacebookIcon />
               </a>
               <a
-                href="https://www.instagram.com/caleacafe/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="w-10 h-10 flex items-center justify-center border border-[#F0E6D2]/20 text-[#F0E6D2]/60 hover:text-[#C49A84] hover:border-[#C49A84]/50 transition-colors rounded-sm"
-                aria-label="Calea on Instagram (opens in new tab)"
+                aria-label="Tovari Crumbs & Brew on Instagram"
               >
                 <InstagramIcon />
               </a>
@@ -161,10 +157,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col gap-1.5 text-center sm:text-left">
             <p className="font-dmsans text-[#F0E6D2]/30 text-xs">
-              &copy; 2026 Unofficial Fan Site. Not affiliated with Calea Pastries &amp; Coffee.
-            </p>
-            <p className="font-dmsans text-[#F0E6D2]/20 text-xs">
-              Made with love by a fan &middot; All trademarks belong to their respective owners.
+              &copy; 2026 Tovari Crumbs &amp; Brew. All rights reserved.
             </p>
             <a
               href="mailto:jamilharunl45@gmail.com"
@@ -174,7 +167,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="font-dmsans text-[#F0E6D2]/20 text-xs">
-            Bacolod City, Negros Occidental, Philippines
+            Tovari Crumbs &amp; Brew
           </p>
         </div>
       </div>

@@ -119,7 +119,7 @@ const menuItems: MenuItem[] = [
   {
     id: 14,
     name: 'Iced Coffee',
-    description: "Calea's house blend over ice. A Bacolod afternoon essential.",
+    description: "Our house blend over ice. A perfect afternoon essential.",
     price: '₱100 – ₱130',
     category: 'Beverages',
     image: 'https://images.unsplash.com/photo-1562440499-64c9a111f713?w=500&q=80',
@@ -151,7 +151,7 @@ export default function Menu() {
             The Menu
           </h2>
           <p className="font-dmsans text-[#4A2E1A]/60 text-base md:text-lg font-light max-w-md mb-6">
-            The menu changes. The Chocolate Mud Pie does not.
+            Handcrafted pastries and specialty coffee, made fresh every day.
           </p>
 
           {/* Filter tabs */}

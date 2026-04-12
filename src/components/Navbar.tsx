@@ -41,13 +41,6 @@ export default function Navbar() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50">
-        {/* Unofficial fan site announcement bar */}
-        <div className="bg-[#2B1A0F] py-1.5 px-5">
-          <p className="font-dmsans text-xs text-center text-[#F0E6D2]/60">
-            Unofficial fan site &middot; Not affiliated with or endorsed by Calea Pastries &amp; Coffee
-          </p>
-        </div>
-
         <nav
           className={`transition-all duration-500 ${
             scrolled || menuOpen
@@ -64,9 +57,9 @@ export default function Navbar() {
             className={`font-playfair text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-500 ${
               scrolled || menuOpen ? 'text-[#2B1A0F]' : 'text-[#F0E6D2]'
             }`}
-            aria-label="Calea — home"
+            aria-label="Tovari Crumbs & Brew — home"
           >
-            Calea
+            Tovari
           </a>
 
           {/* Desktop links */}

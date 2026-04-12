@@ -58,7 +58,7 @@ export default function GlassCase() {
     <section
       id="glass-case"
       className="py-20 md:py-28 bg-[#2B1A0F] overflow-hidden"
-      aria-label="The Glass Case — Calea bestsellers"
+      aria-label="The Glass Case — Tovari Crumbs & Brew bestsellers"
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8 mb-10 md:mb-14">
         <p className="font-italiana text-[#C49A84] text-sm tracking-[0.2em] uppercase mb-3">
@@ -98,7 +98,7 @@ export default function GlassCase() {
               {/* Cake image */}
               <img
                 src={cake.image}
-                alt={isRevealed ? cake.name : 'A mystery pastry from Calea'}
+                alt={isRevealed ? cake.name : 'A mystery pastry from Tovari Crumbs & Brew'}
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />

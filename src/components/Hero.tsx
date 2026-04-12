@@ -14,7 +14,7 @@ export default function Hero() {
     <section
       id="hero"
       className="relative w-full h-svh min-h-[600px] flex items-center justify-center overflow-hidden"
-      aria-label="Hero — Calea Pastries & Coffee"
+      aria-label="Hero — Tovari Crumbs & Brew"
     >
       {/* Background image */}
       <div className="absolute inset-0">
@@ -32,15 +32,15 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-2xl mx-auto flex flex-col items-center gap-6">
         <p className="font-italiana text-[#C49A84] text-sm md:text-base tracking-[0.25em] uppercase">
-          Bacolod City, Philippines
+          Crumbs &amp; Brew
         </p>
 
         <h1 className="font-italiana text-[#F0E6D2] text-4xl md:text-6xl lg:text-7xl leading-tight">
-          Because Life is Sweeter in Bacolod
+          Simple Moments, Made Memorable
         </h1>
 
         <p className="font-dmsans text-[#F0E6D2]/80 text-base md:text-lg font-light max-w-md">
-          Desserts, coffee, and a glass case worth getting lost in. Bacolod, since 2009.
+          Freshly baked, carefully brewed, and made to turn ordinary moments into something comforting and worth savoring.
         </p>
 
         <a

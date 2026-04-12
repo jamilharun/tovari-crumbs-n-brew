@@ -8,7 +8,7 @@ interface GalleryImage {
 const images: GalleryImage[] = [
   {
     src: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80',
-    alt: 'Elegant layered cake with fresh toppings at Calea',
+    alt: 'Elegant layered cake with fresh toppings at Tovari',
   },
   {
     src: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80',
@@ -86,7 +86,7 @@ export default function Gallery() {
     <section
       id="gallery"
       className="py-20 md:py-28 bg-[#F0E6D2]"
-      aria-label="Gallery — A Taste of Calea"
+      aria-label="Gallery — A Taste of Tovari Crumbs & Brew"
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
@@ -95,7 +95,7 @@ export default function Gallery() {
             Through the lens
           </p>
           <h2 className="font-playfair text-[#2B1A0F] text-3xl md:text-5xl font-bold">
-            A Taste of Calea
+            A Taste of Tovari
           </h2>
         </div>
 

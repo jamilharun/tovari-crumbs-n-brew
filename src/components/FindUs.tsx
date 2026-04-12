@@ -10,28 +10,30 @@ interface Location {
 const locations: Location[] = [
   {
     id: 1,
-    name: 'Lacson Street',
+    name: 'Main Branch',
     tag: 'Flagship',
-    address: 'Door No. G1-4 Balay Quince Commercial Building, 15th Lacson Street, Bacolod City',
-    phone: ['+63 34 435 8413', '+63 34 441 0505'],
+    address: '12 Crumbs Lane, Old Town District',
+    phone: ['+1 555 012 3456'],
     hours: [
-      'Mon – Thu & Sun: 9:00 AM – 9:30 PM',
-      'Fri – Sat: 9:00 AM – 10:00 PM',
+      'Mon – Thu & Sun: 7:00 AM – 9:00 PM',
+      'Fri – Sat: 7:00 AM – 10:00 PM',
     ],
   },
   {
     id: 2,
-    name: 'Robinsons Place Bacolod',
-    tag: 'Mall',
-    address: '1st Level, Robinsons Place Bacolod, Lacson Street, Mandalagan, Bacolod City',
-    hours: ['Mall hours apply'],
+    name: 'North Square',
+    tag: 'Café',
+    address: 'Unit 4B, North Square Market, Riverside Ave',
+    hours: [
+      'Mon – Sun: 8:00 AM – 8:00 PM',
+    ],
   },
   {
     id: 3,
-    name: 'The District Ayala North Point',
-    tag: 'Mall',
-    address: 'The District Ayala North Point, City of Talisay, Negros Occidental',
-    hours: ['Mall hours apply'],
+    name: 'The Mill',
+    tag: 'Pop-up',
+    address: 'The Mill Community Hub, 88 Foundry Street',
+    hours: ['Weekends only: 9:00 AM – 5:00 PM'],
   },
 ];
 
@@ -96,19 +98,19 @@ export default function FindUs() {
     <section
       id="find-us"
       className="py-20 md:py-28 bg-[#2B1A0F]"
-      aria-label="Find Us — Calea locations"
+      aria-label="Find Us — Tovari Crumbs & Brew locations"
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="mb-12 md:mb-16">
           <p className="font-italiana text-[#C49A84] text-sm tracking-[0.2em] uppercase mb-3">
-            Three places to find us
+            Come find us
           </p>
           <h2 className="font-playfair text-[#F0E6D2] text-3xl md:text-5xl font-bold mb-4">
             Find Us
           </h2>
           <p className="font-dmsans text-[#F0E6D2]/60 text-base md:text-lg font-light max-w-md">
-            Lacson Street is where it started. The others followed.
+            Three spots, one warm welcome at each.
           </p>
         </div>
 
@@ -185,11 +187,9 @@ export default function FindUs() {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="https://www.facebook.com/pages/Calea-Pastries-Cake-Bacolod-City/126985990721233"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
               className="flex items-center gap-2.5 font-dmsans text-sm text-[#F0E6D2]/70 hover:text-[#C49A84] transition-colors"
-              aria-label="Calea on Facebook (opens in new tab)"
+              aria-label="Tovari Crumbs & Brew on Facebook"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -197,11 +197,9 @@ export default function FindUs() {
               Facebook
             </a>
             <a
-              href="https://www.instagram.com/caleacafe/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
               className="flex items-center gap-2.5 font-dmsans text-sm text-[#F0E6D2]/70 hover:text-[#C49A84] transition-colors"
-              aria-label="Calea on Instagram (opens in new tab)"
+              aria-label="Tovari Crumbs & Brew on Instagram"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />

@@ -1,10 +1,9 @@
-# Calea Pastries & Coffee — Website
+# Tovari Crumbs & Brew — Website
 
-Unofficial website for Calea Pastries & Coffee, Bacolod City's award-winning dessert cafe. This is their first web presence.
+Website for Tovari Crumbs & Brew, a cozy café and bakery serving handcrafted pastries and specialty coffee. Freshly baked, carefully brewed, and made to turn simple moments into something comforting and memorable.
 
-**Tagline:** "Because Life is Sweeter in Bacolod."
-**Owner:** Ging Consing
-**Live locations:** Lacson Street (flagship), Robinsons Place Bacolod, The District Ayala North Point
+**Tagline:** "Simple moments, made memorable."
+**Locations:** Main Branch (flagship), North Square, The Mill (pop-up)
 
 ---
 
@@ -45,13 +44,13 @@ The dev server runs at `http://localhost:5173` by default.
 src/
   components/
     Navbar.tsx       Fixed top nav — transparent over hero, solid on scroll, mobile hamburger
-    Hero.tsx         Full-viewport hero with pastry photography and tagline
+    Hero.tsx         Full-viewport hero with bakery photography and tagline
     GlassCase.tsx    Signature section: horizontal scroll with blur-reveal cards
     Menu.tsx         Filterable catalog (All / Cakes & Pastries / Beverages / Seasonal)
-    About.tsx        Brand story, name origin, stats bar
-    FindUs.tsx       3 branch location cards with address, phone, and hours
+    About.tsx        Brand story and values
+    FindUs.tsx       3 location cards with address, phone, and hours
     Gallery.tsx      CSS columns masonry layout with keyboard-navigable lightbox
-    Footer.tsx       Tagline, social links, TripAdvisor badge, smooth-scroll nav
+    Footer.tsx       Tagline, social links, smooth-scroll nav
   index.css          Global styles + Tailwind v4 @theme block (all design tokens)
   App.tsx            Root component, page assembly
   main.tsx           Entry point
@@ -91,7 +90,7 @@ Custom fonts defined in `@theme` are available directly as utilities:
 ### Notable implementation details
 
 - **Glass Case dual reveal:** CSS `group-hover` handles desktop; React state toggle handles mobile/tap. Both mechanisms run simultaneously — do not remove one thinking the other covers it.
-- **Images:** All images are currently Unsplash placeholders sized via `?w=` query params for performance. Replace with real Calea photography before launch (see checklist below).
+- **Images:** All images are currently Unsplash placeholders sized via `?w=` query params for performance. Replace with real Tovari photography before launch (see checklist below).
 - **Tailwind v4:** There is no config file. Custom tokens, fonts, and any theme extensions belong in the `@theme {}` block in `src/index.css`.
 
 ---
@@ -100,11 +99,10 @@ Custom fonts defined in `@theme` are available directly as utilities:
 
 These items must be resolved before the site goes live:
 
-- [ ] **Replace placeholder images** — swap all Unsplash URLs in `Hero.tsx`, `GlassCase.tsx`, and `Gallery.tsx` with real Calea photography. Keep the `?w=` sizing params or equivalent for performance.
-- [ ] **Confirm founding year** — verify the establishment year (currently listed as 2009) with owner Ging Consing.
-- [ ] **Verify Chocolate Mud Pie claim** — confirm the origin/recipe claim referenced in `About.tsx` with the owner before publishing.
-- [ ] **Confirm branch hours** — Robinsons Place and Ayala North Point hours are listed as "mall hours." Get exact operating times for both branches directly.
-- [ ] **Claim review listings** — claim and link the official TripAdvisor and Yelp listings (TripAdvisor badge in footer links to the unclaimed profile).
+- [ ] **Replace placeholder images** — swap all Unsplash URLs in `Hero.tsx`, `GlassCase.tsx`, `Menu.tsx`, and `Gallery.tsx` with real Tovari Crumbs & Brew photography.
+- [ ] **Confirm branch details** — verify addresses, phone numbers, and operating hours for all three locations.
+- [ ] **Update menu items and prices** — replace placeholder menu entries in `Menu.tsx` and `GlassCase.tsx` with the actual Tovari menu.
+- [ ] **Add social media links** — fill in the real Facebook and Instagram profile URLs in `Footer.tsx` and `FindUs.tsx`.
 - [ ] **Set up analytics** — add Google Analytics 4 or an equivalent (e.g., Plausible, Fathom) before launch to capture baseline traffic data.
 
 ---
