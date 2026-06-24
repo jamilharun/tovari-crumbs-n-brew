@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { cors } from "hono/cors";
 
 const SECURITY_HEADERS: Record<string, string> = {
   "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
@@ -18,6 +19,11 @@ const SECURITY_HEADERS: Record<string, string> = {
 };
 
 const app = new Hono();
+
+app.use(
+  "*",
+  cors({ origin: "https://portfolio.jamilharun.workers.dev" })
+);
 
 app.use("*", async (c, next) => {
   await next();
