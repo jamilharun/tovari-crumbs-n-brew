@@ -166,9 +166,14 @@ export default function Footer() {
               jamilharunl45@gmail.com
             </a>
           </div>
-          <p className="font-dmsans text-[#F0E6D2]/20 text-xs">
-            Tovari Crumbs &amp; Brew
-          </p>
+          <a
+            href="https://portfolio.jamilharun.workers.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-dmsans text-[#F0E6D2]/20 text-xs hover:text-[#C49A84] transition-colors"
+          >
+            Built by Jamil Harun
+          </a>
         </div>
       </div>
     </footer>
